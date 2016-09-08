@@ -1,0 +1,35 @@
+
+h1{
+  text-align: center;
+}
+
+table {
+  border: 2px solid black;
+  width: 630px;
+  margin: 0 auto;
+
+}
+
+td {
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+input{
+  font-family: monospace;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  height: 100%;
+}
+
+button{
+  margin: 0 auto;
+}
