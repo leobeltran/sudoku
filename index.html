@@ -4,24 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Sudoku</title>
 </head>
 <body>
-<div class="container">
+  <div class="container" id='grid'>
+    <table class="loader">
+      <caption>Zudoku a day to take the stress away</caption>
+      <colgroup><col><col><col>
+      <colgroup><col><col><col>
+      <colgroup><col><col><col>
 
-  <h1>Let's Play Sudoku!</h1>
-  <button type="button" class="btn btn-success" id="validate">Validate</button>
-
-  <table>
-    <tbody></tbody>
-  </table>
-
-
-
-
-</div>
+      <tbody id='tb1'></tbody>
+      <tbody id='tb2'></tbody>
+      <tbody id='tb3'></tbody>
+    </table>
+    <div id="load">
+      <button type="submit" style="border: 0; background: transparent" id="validate"><img src="/valbtn.png" width="140" height="70" alt="validate" /></button>
+      <button type="submit" style="border: 0; background: transparent" id="reset" onclick="reload()"><img src="/rstbtn.png" width="140" height="70" alt="reset" /></button>
+    </div>
+  </div>
 
 <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src='index.js'></script>
